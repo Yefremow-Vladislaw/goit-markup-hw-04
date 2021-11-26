@@ -1,0 +1,161 @@
+body {
+  background-color: #e5e5e5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+}
+.header-section,
+.main-section {
+  background-color: #ffffff;
+}
+.footer-section {
+  background-color: #2f303a;
+}
+.site-logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1, 17;
+  letter-spacing: 0, 03em;
+  color: black;
+}
+.studio-adress,
+.contacts-header,
+.contacts-footer,
+.site-logo,
+.link-nav,
+.logo-prefix {
+  text-decoration: none;
+}
+.logo-prefix {
+  color: #2196f3;
+}
+ul {
+  list-style: none;
+}
+.contacts-header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 17;
+  letter-spacing: 0, 02em;
+  color: #757575;
+}
+.contacts-footer {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1, 7;
+  letter-spacing: 0, 03em;
+  color: #ffffff99;
+}
+.studio-adress {
+  font-size: 14px;
+  line-height: 1, 7;
+  letter-spacing: 0, 03em;
+  color: #ffffff;
+}
+.link-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 17;
+  letter-spacing: 0, 03em;
+  color: #212121;
+}
+.projects-header {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0, 06em;
+  color: #212121;
+}
+.projects-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1, 9;
+  letter-spacing: 0, 03em;
+  color: #757575;
+}
+/* Buttons-design */
+.order-service {
+  font-weight: 700;
+  font-size: 16;
+  line-height: 1, 9;
+  text-align: center;
+  letter-spacing: 0, 06em;
+  color: #212121;
+  background-color: #f5f4fa;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+.portpholio-buttons {
+  font-weight: 500;
+  font-size: 16;
+  line-height: 1, 6;
+  text-align: center;
+  letter-spacing: 0, 03em;
+  color: #212121;
+  background-color: #f5f4fa;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+.portpholio-buttons:hover,
+.order-service:hover {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+.link-nav:hover {
+  color: #2196f3;
+}
+.contacts-header:hover {
+  color: #2196f3;
+}
+.studio-header-section {
+  background-color: #2f303a;
+}
+.studio-main-header {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1, 4;
+  letter-spacing: 0, 03em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #2f303a;
+}
+.we-do-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1, 17;
+  letter-spacing: 0, 03em;
+  text-align: center;
+  color: #212121;
+}
+.our-advantages-header {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0, 03em;
+  line-height: 1, 17;
+  color: #212121;
+}
+.our-advantages-desc {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0, 03em;
+  color: #757575;
+}
+.hero-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1, 17;
+  letter-spacing: 0, 03em;
+  text-align: center;
+  color: #212121;
+}
+.hero-prophecy {
+  font-size: 16px;
+  line-height: 1, 17;
+  letter-spacing: 0, 03em;
+  text-align: center;
+  color: #757575;
+}
