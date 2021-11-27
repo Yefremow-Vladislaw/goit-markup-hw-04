@@ -103,7 +103,9 @@ ul {
   background-color: #2196f3;
 }
 .link-nav:hover,
-.contacts-header:hover,
+.contacts-header:hover {
+  color: #2196f3;
+}
 .contacts-footer:hover {
   color: #2196f3;
 }
