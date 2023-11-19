@@ -9,14 +9,65 @@ body
 ul
 {
  list-style-type: none;
+ padding-left: 0;
+ margin: 0;
 }
-.footer-section,.banner
+h1,h2,h3,p
+{
+  margin: 0;
+}
+img,a,button
+{
+  display: block;
+}
+img
+{
+ width:100%;  
+}
+.container
+{
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+.section
+  {
+    padding: 120px 0;
+  }
+  .container-header,
+  .head-nav,
+  .nav-list,
+  .contacts
+  {
+    display: flex;
+  }
+  .container-header
+  {
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: center;
+  }
+.nav-list, .contacts
+  {
+    column-gap: 40px;
+  }
+.head-nav
+{
+  margin-right: auto;
+}
+.footer-section, .banner
 {
   background-color: #2E2F42;
+}
+.banner
+{
+  padding: 188px 0;
 }
 .footer-text
 {
   color: #F4F4FD;
+  width: 264px;
 }
 .order-btn
 {
@@ -24,6 +75,9 @@ ul
   color: #ffffff;
   font-weight: 500;
   letter-spacing: 0.04em;
+  display: block;
+  margin: 0 auto;
+  padding: 16px 32px;
 }
 .order-btn:hover
 {
@@ -46,6 +100,7 @@ ul
 {
   font-size: 16px;
   font-weight: 500;
+  padding: 24px 0;
 }
 .logo,.logo-pref
 {
@@ -56,18 +111,30 @@ ul
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+.logo
+{
+  padding:25.5px 0;
+  margin-right: 76px;
+}
 .link
 {
   text-decoration: none;
   color: #2E2F42;
 }
+.link-contact
+{
+  padding: 24px 0;
+}
 .logo-pref
 {
   color: #4D5AE5;
 }
-.footer-section>.logo
+.footer-section .logo
 {
   color: #ffffff;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 16px;
 }
 .main-header
 {
@@ -75,6 +142,8 @@ ul
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
+  text-align: center;
+  margin-bottom: 48px;
 }
 .section-header
 {
@@ -82,6 +151,8 @@ ul
   font-weight: 700;
   line-height: 1.11;
   color: #2E2F42;
+  text-align: center;
+  margin-bottom: 72px;
 }
 .card-header
 {
@@ -89,18 +160,54 @@ ul
   font-weight: 500;
   line-height: 1.2;
   color: #2E2F42;
+  margin-bottom: 8px;
 }
-.contacts
+.hero-list .card-header,
+.hero-prophecy
 {
-  font-style: normal;
+  text-align: center;
 }
 .our-team
 {
   background-color: #F4F4FD;
+
 }
-.team-card
+.list-card
 {
-  box-shadow: 0px 2px 1px 0px #2e2f4214,
-  0px 1px 1px 0px #2e2f4229,
-  0px 1px 6px 0px #2e2f4214;
+  width: calc(100%-96)/4;
+  padding-bottom: 32px;
+}
+.prtf-card
+{
+  width: calc(100%-72)/3;
+}
+.benefits-list,
+.hero-list
+{
+  display: flex;
+  justify-content: center;
+  column-gap: 24px;
+}
+.prtf-list
+{
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.team-image, .prtf-image
+{
+  margin-bottom: 32px;
+}
+.footer-section
+{
+  padding: 100px 0;
+}
+.footer-list
+{
+  display: flex;
+  flex-direction:column;
 }
