@@ -30,13 +30,13 @@ img
   }
   .container
   {
-      max-width: 1128px;
+      max-width: 1158px;
       padding-left: 15px;
       padding-right: 15px;
       margin-left:  auto;
       margin-right: auto;
   }
-  .header-section .container,
+  .container-header,
   .head-nav,
   .nav-list,
   .contacts,
@@ -44,9 +44,13 @@ img
   {
     display: flex;
   }
-  .header-section .container, .contacts-list
+  .container-header
   {
-    align-items: center;
+    justify-content: space-between;
+  }
+  .head-nav
+  {
+align-items: center;
   }
   .header-section
   {
@@ -56,8 +60,6 @@ img
   .contacts
   {
     font-style: normal;
-    margin-left: auto;
-
   }
 .contacts-list, .nav-list
 {
@@ -102,12 +104,14 @@ img
 {
   color: #434455;
   display: block;
+  padding: 24px 0;
 }
 .link-nav
 {
   font-size: 16px;
   font-weight: 500;
   display: block;
+  padding: 24px 0;
 }
 .logo, .logo-pref
 {
@@ -127,7 +131,6 @@ img
 {
   text-decoration: none;
   color: #2E2F42;
-  padding: 24px 0;
 }
 .logo-pref
 {
@@ -137,7 +140,7 @@ img
 {
   display: inline-block;
   color: #ffffff;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 .main-header
 {
@@ -204,8 +207,6 @@ img
 {
   display: flex;
   column-gap: 24px;
-  justify-content: center;
-  align-content: center;
 }
 .prtf-list
 {
