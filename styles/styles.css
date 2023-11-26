@@ -23,6 +23,7 @@ img,button
 img
 {
  max-width:100%;
+ height: auto;
 }
 .section
   {
@@ -60,18 +61,25 @@ align-items: center;
   .contacts
   {
     font-style: normal;
+    align-items: center;
   }
 .contacts-list, .nav-list
 {
   column-gap: 40px;
 }
-.footer-section, .banner
+.footer-section
 {
   background-color: #2E2F42;
 }
 .banner
 {
   padding: 188px 0;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+   rgba(46, 47, 66, 0.70)), 
+  url(../images/people-office-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .footer-text
 {
@@ -80,7 +88,7 @@ align-items: center;
 }
 .order-btn
 {
-  background: #4D5AE5;
+  background-color: #4D5AE5;
   color: #ffffff;
   font-weight: 500;
   letter-spacing: 0.04em;
@@ -88,30 +96,47 @@ align-items: center;
   margin: 0 auto;
   padding: 16px 32px;
   border-radius: 4px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px 0px #00000026;
+;
 }
 .order-btn:hover
 {
-  background: #404BBF;
+  background-color: #404BBF;
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link:hover,
-.link:focus
-{
-  color: #404BBF;
-}
-.link-contact
-{
-  color: #434455;
-  display: block;
-  padding: 24px 0;
-}
-.link-nav
+.link-nav,.link-contact
 {
   font-size: 16px;
   font-weight: 500;
-  display: block;
+  display: flex;
+  flex-direction: column;
   padding: 24px 0;
+  position: relative;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link:hover
+{
+  color: #404BBF;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-nav:hover:after,
+.link-contact:hover:after
+{
+  display: block;
+  height: 4px;
+  width: 100%;
+  content: "";
+  background-color: #404BBF;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 4px;
+}
+.link-contact
+{
+  color: #2E2F42;
+  font-weight: 400;
 }
 .logo, .logo-pref
 {
@@ -176,6 +201,10 @@ align-items: center;
 {
   text-align: center;
 }
+.hero-prophecy
+{
+  margin-bottom: 8px;
+}
 .our-team
 {
   background-color: #F4F4FD;
@@ -183,7 +212,7 @@ align-items: center;
 }
 .list-card
 {
-  width: calc(100% - 72px) / 4;
+  width: calc(100% - 72px)/4;
   padding-bottom: 32px;
 }
 .hero-card
@@ -193,12 +222,13 @@ align-items: center;
   box-shadow: 0px 2px 1px 0px #2E2F4214,
    0px 1px 1px 0px #2E2F4229,
     0px 1px 6px 0px #2E2F4214;
+  display: flex;
+  flex-direction: column;
 
 }
 .prtf-card
 {
   width: calc((100% - 48px) / 3);
-  padding-bottom: 32px;
   border: 1px solid #E7E9FC;
 
 }
@@ -207,6 +237,92 @@ align-items: center;
 {
   display: flex;
   column-gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+.container-footer
+{
+  display: flex;
+}
+.social-media-header
+{
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.social-link
+{
+  line-height: 0;
+  text-decoration: none;
+  display: block;
+}
+.social-links-list
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 16px;
+}
+.social-link-item
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4D5AE5;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.prtf-box
+{
+ position: relative;
+ overflow: hidden;
+}
+.prtf-overlay
+{
+  position:absolute;
+  color:#ffffff;
+  background-color: #4D5AE5;
+  padding: 40px 32px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(100%);
+}
+.prtf-box:hover .prtf-overlay
+{
+  transform: translateY(0);
+}
+.footer-logo-container
+{
+  margin-right: 120px;
+}
+.social-link-footer
+{
+ display: flex;
+ flex-direction: column;
+}
+.social-link-icon
+{
+  fill: #ffffff;
+}
+.social-link:hover,
+.social-link-item:hover
+{
+  background-color: #31D0AA;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.benefits-icon-container
+{
+  border: 2px solid #8E8F99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 100px;
+  margin-bottom: 8px;
+  background: #F4F4FD;
 }
 .prtf-list
 {
@@ -215,9 +331,9 @@ align-items: center;
 }
 .card-content
 {
-  padding: 0 16px;
+  padding: 32px 0;
 }
-.team-image, .prtf-image
+.team-image
 {
   margin-bottom: 32px;
 }
@@ -225,4 +341,3 @@ align-items: center;
 {
   padding: 100px 0;
 }
-
