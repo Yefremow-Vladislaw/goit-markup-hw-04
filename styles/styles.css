@@ -117,19 +117,19 @@ align-items: center;
   flex-direction: column;
   padding: 24px 0;
   position: relative;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .link:hover
 {
   color: #404BBF;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link-nav:hover:after,
-.link-contact:hover:after
+.link-nav:after,
+.link-contact:after
 {
   display: block;
   height: 4px;
-  width: 100%;
+  width: 48px;
   content: "";
   background-color: #404bbf;
   position: absolute;
