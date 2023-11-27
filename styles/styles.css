@@ -193,6 +193,10 @@ align-items: center;
   text-align: center;
   margin-bottom: 72px;
 }
+.our-benefits .section-header
+{
+  display: none;
+}
 .card-header
 {
   font-size: 20px;
@@ -284,6 +288,12 @@ align-items: center;
   display: flex;
   justify-content: center;
   gap: 24px;
+}
+.social-links-list-footer
+{
+  display: flex;
+  justify-content: center;
+  gap: 16px;
 }
 .prtf-box
 {
