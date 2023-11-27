@@ -130,7 +130,7 @@ img
 }
 .link-nav-studio
 {
-  color: #404BBF;;
+  color: #404BBF;
 }
 .link-nav-studio::after
 {
@@ -340,8 +340,14 @@ img
 .social-link:hover,
 .social-link:focus
 {
+ background-color: #404bbf; 
+}
+.social-links-list-footer .social-link:hover,
+.social-links-list-footer .social-link:focus
+{
   background-color: #31D0AA;
 }
+
 .benefits-icon-container
 {
   border: 2px solid #8E8F99;
