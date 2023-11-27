@@ -193,7 +193,7 @@ align-items: center;
   text-align: center;
   margin-bottom: 72px;
 }
-.our-benefits .section-header
+.visually-hidden
 {
   display: none;
 }
@@ -325,6 +325,7 @@ align-items: center;
 {
  display: flex;
  flex-direction: column;
+ gap: 16px;
 }
 .social-link-icon
 {
